@@ -3,10 +3,10 @@
 
 #ifndef FORMATTER_H
 #define FORMATTER_H
-char *intToBinary(int i);           // ºÎÈ£ ÀÖ´Â 32ºñÆ® Á¤¼ö¸¦, 2Áø¼ö ¹®ÀÚ¿­·Î º¯È¯
-char *uintToBinary(unsigned int i); // ºÎÈ£ ¾ø´Â 32ºñÆ® Á¤¼ö¸¦, 2Áø¼ö ¹®ÀÚ¿­·Î º¯È¯
-int binaryToInt(char *s);           // 2Áø¼ö ¹®ÀÚ¿­À», ºÎÈ£ ÀÖ´Â 32ºñÆ® Á¤¼ö·Î º¯È¯
-unsigned int binaryToUint(char *s); // 2Áø¼ö ¹®ÀÚ¿­À», ºÎÈ£ ¾ø´Â 32ºñÆ® Á¤¼ö·Î º¯È¯
+char *intToBinary(int i);           // ë¶€í˜¸ ìˆëŠ” 32ë¹„íŠ¸ ì •ìˆ˜ë¥¼, 2ì§„ìˆ˜ ë¬¸ìì—´ë¡œ ë³€í™˜
+char *uintToBinary(unsigned int i); // ë¶€í˜¸ ì—†ëŠ” 32ë¹„íŠ¸ ì •ìˆ˜ë¥¼, 2ì§„ìˆ˜ ë¬¸ìì—´ë¡œ ë³€í™˜
+int binaryToInt(char *s);           // 2ì§„ìˆ˜ ë¬¸ìì—´ì„, ë¶€í˜¸ ìˆëŠ” 32ë¹„íŠ¸ ì •ìˆ˜ë¡œ ë³€í™˜
+unsigned int binaryToUint(char *s); // 2ì§„ìˆ˜ ë¬¸ìì—´ì„, ë¶€í˜¸ ì—†ëŠ” 32ë¹„íŠ¸ ì •ìˆ˜ë¡œ ë³€í™˜
 #endif
 
 /*
@@ -16,9 +16,9 @@ void main(void) {
   printf("%s\n",  intToBinary(0x0));
   printf("%s\n",  intToBinary(0xFF));
   printf("%s\n",  intToBinary(0xFFFF));
-  printf("%s\n",  intToBinary(-2147483647 - 1)); // int ÃÖ¼Ò°ª = -2147483648
-  printf("%s\n",  intToBinary(2147483647));      // int ÃÖ´ë°ª
-  printf("%s\n",  intToBinary(639127054));       // ÀÓÀÇÀÇ °ª
+  printf("%s\n",  intToBinary(-2147483647 - 1)); // int ìµœì†Œê°’ = -2147483648
+  printf("%s\n",  intToBinary(2147483647));      // int ìµœëŒ€ê°’
+  printf("%s\n",  intToBinary(639127054));       // ì„ì˜ì˜ ê°’
 
 
   puts("\n\nDecimal to Binary (unsigned int) :\n");
@@ -27,7 +27,7 @@ void main(void) {
   printf("%s\n", uintToBinary(0xF));
   printf("%s\n", uintToBinary(0xFF));
   printf("%s\n", uintToBinary(0xFFFF));
-  printf("%s\n", uintToBinary(0xFFFFFFFF)); // unsigned int ÃÖ´ë°ª
+  printf("%s\n", uintToBinary(0xFFFFFFFF)); // unsigned int ìµœëŒ€ê°’
 
 
   puts("\n\nBinary to Decimal (int):");
