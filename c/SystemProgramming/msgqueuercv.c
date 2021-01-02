@@ -27,7 +27,7 @@ int main(void)
     msg.type = 0;
     // msgflag
     // 0 (WAIT)   : Block mode     => 통상 수신측은 WAIT
-    // IPC_NOWAIT : Non-Block mode => 또는 NOWAIT 로 읽고 없으면 뺑뺑이이 다시 읽고..
+    // IPC_NOWAIT : Non-Block mode => 또는 NOWAIT 로 읽고 없으면 뺑뺑이 다시 읽고..
     msgflag = 0;
     len = msgrcv(msgid, &msg, MSGSIZE, msg.type, msgflag);
     printf("Received Message is [%d] %s\n", len, msg.text);

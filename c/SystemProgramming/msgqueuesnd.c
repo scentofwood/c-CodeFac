@@ -14,6 +14,7 @@ int main(void)
     int msgid, len, msgflag;
     MsgBuf msg;
     key_t key = 1234;
+    // rw-r--r-- 권한으로 큐를 생성할 수도 있다.
     msgid = msgget(key, IPC_CREAT|0644);
     if (msgid == -1) {
         perror("msgget");
