@@ -1,4 +1,4 @@
-#include <sys/types.h>
+//#include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -9,6 +9,7 @@ int main()
     pid_t child;
     int status;
     printf("[PRNT] Before fork() call\n");
+
     pid = fork();
 
     switch (pid) {
@@ -32,6 +33,7 @@ int main()
         // 자식프로세스가 exit 되면 SIGCHLD 시그널에 의해 아래 wait 함수에 응답이 온다.
         child = wait(&status);
         printf("[PRNT] Parent's waiting is over. Child is [%d] status[%d]\n", child, status);
+        break;
     }
 
     for (int i = 0; i < 2000000000; i++)
