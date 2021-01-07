@@ -1,0 +1,8 @@
+HELLO MMAP!drwxrwxr-x  2 changhoyeo changhoyeo  4096  1월  7 22:44 .
+drwxrwxr-x 18 changhoyeo changhoyeo  4096  1월  2 21:01 ..
+-rwxrwxr-x  1 changhoyeo changhoyeo 17056  1월  3 13:38 forktest
+-rw-rw-r--  1 changhoyeo changhoyeo  1616  1월  3 12:00 forktest.c
+-rwxrwxr-x  1 changhoyeo changhoyeo 17152  1월  7 22:43 mmapread
+-rwxrwxr-x  1 changhoyeo changhoyeo 16928  1월  2 22:33 msgqueuesnd
+-rw-rw-r--  1 changhoyeo changhoyeo   831  1월  2 23:04 msgqueuesnd.c
+-rw-rw-r--  1 changhoyeo changhoyeo   490  1월  3 17:13 signalloop.c
