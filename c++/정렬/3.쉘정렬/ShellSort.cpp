@@ -5,7 +5,7 @@ using namespace std;
 
 // 쉘정렬 
 // 특정 레코드와 거리가 일정한 레코드끼리 부파일로 나누어 각 부파일을 삽입정렬하는 알고리즘 
-// 최악O(N^2), 평균O(N*1.5) 성능을 갖는 정렬 알고리즘
+// 최악O(N^2), 평균O(N^1.5) 성능을 갖는 정렬 알고리즘
 
 void insertionSort(vector<int>* v, int first, int last, int gap) {
 	int temp;
